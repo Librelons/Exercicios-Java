@@ -20,7 +20,7 @@ public class Exercicio {
 
         double media = (temperaturaum + temperaturadois +temperaturatres) / 3;
 
-        System.out.printf("A média das três temperaturas será: %sCº\n", media);
+        System.out.printf("A média das três temperaturas será: %fCº\n", media);
 
     }
 }
