@@ -7,20 +7,16 @@ public class Exercicio {
         Scanner entrada = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        double temperaturaum;
-        double temperaturadois;
-        double temperaturatres;
-
         System.out.println("Qual foi a temperatura do primeiro dia em Cº? ");
-        temperaturaum = entrada.nextDouble();
+        double temperaturaum = entrada.nextDouble();
         System.out.println("Qual foi a temperatura do segundo dis em Cº? ");
-        temperaturadois = entrada.nextDouble();
+        double temperaturadois = entrada.nextDouble();
         System.out.println("Qual foi a temperatura do terceiro dis em Cº? ");
-        temperaturatres = entrada.nextDouble();
+        double temperaturatres = entrada.nextDouble();
 
         double media = (temperaturaum + temperaturadois +temperaturatres) / 3;
 
-        System.out.printf("A média das três temperaturas será: %fCº\n", media);
+        System.out.printf("A média das três temperaturas será: %.2fCº\n", media);
 
     }
 }
