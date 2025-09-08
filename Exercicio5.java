@@ -4,8 +4,8 @@ import java.util.Locale;
 public class Exercicio5 {
     public static void main (String[] args) {
 
-        Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
 
         System.out.println("Digite sua altura: ");
         double altura = entrada.nextDouble();
@@ -14,6 +14,15 @@ public class Exercicio5 {
 
         double imc = peso/(altura*altura);
 
-        System.out.printf("Seu IMC será: %.2f", imc);
+        if (imc < 18.5) {
+            System.out.printf ("Você está abaixo do peso com o IMC de %.2f.", imc);
+        } else if ( imc >= 18.5 && imc < 25) {
+            System.out.printf ("Seu peso está ok, com o IMC de %.2f.", imc);
+        } else if ( imc >= 25 && imc < 30) {
+            System.out.printf ("Você está com sobrepeso, com IMC de %.2f.", imc);
+        } else {
+            System.out.printf ("Você está obeso, com IMC de %.2f.", imc);
+        }
+
     }
 }
