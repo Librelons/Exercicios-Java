@@ -7,13 +7,10 @@ public class Exercicio6 {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
 
-        double numeroum;
-        double numerodois;
-
         System.out.println("Digite um numero: ");
-        numeroum = entrada.nextDouble();
+        double numeroum = entrada.nextDouble();
         System.out.println("Digite outro numero: ");
-        numerodois = entrada.nextDouble();
+        double numerodois = entrada.nextDouble();
 
         double soma = numeroum + numerodois;
         double subtracao = numeroum - numerodois;
