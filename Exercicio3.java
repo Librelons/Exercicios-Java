@@ -5,10 +5,8 @@ public class Exercicio3 {
 
         Scanner entrada = new Scanner(System.in);
 
-        int idade;
-
         System.out.println("Digite o idade em anos: ");
-        idade = entrada.nextInt();
+        int idade = entrada.nextInt();
 
         int idademeses = idade * 12;
 
