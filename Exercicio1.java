@@ -7,10 +7,8 @@ public class Exercicio1 {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
 
-        double numero;
-
         System.out.println("Digite um numero: ");
-        numero = entrada.nextDouble();
+        double numero = entrada.nextDouble();
 
         // Variavel utilizada apenas para calcular o dobro do numero recebido no inicio
         double dobro = numero * 2;
