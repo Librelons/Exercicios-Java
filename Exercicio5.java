@@ -7,14 +7,10 @@ public class Exercicio5 {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
 
-
-        double altura;
-        double peso;
-
         System.out.println("Digite sua altura: ");
-        altura = entrada.nextDouble();
+        double altura = entrada.nextDouble();
         System.out.println("Digite sua peso: ");
-        peso = entrada.nextDouble();
+        double peso = entrada.nextDouble();
 
         double imc = peso/(altura*altura);
 
