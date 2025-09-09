@@ -12,8 +12,10 @@ public class ExercicioF05 {
 
         if (nota >= 7) {
             System.out.print("Parabéns!!\nVocê foi aprovado!");
-        }else {
-            System.out.print("Infelizmente você está de recuperação");
+        } else if (nota < 7 && nota >= 4.01) {
+            System.out.print("Infelizmente você está de recuperação"); 
+        } else {
+            System.out.print("Você foi reprovado");
         }
     }
 }
